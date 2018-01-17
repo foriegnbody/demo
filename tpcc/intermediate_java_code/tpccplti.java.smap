@@ -1,0 +1,38 @@
+SMAP
+tpccplti.java
+COBOL
+*S COBOL
+*L
+58!2360~2364:366,47~2@0
+60!2428~2431:413~0@0
+76!3009~3012:414~0@0
+79!3088~3092:415~0@0
+82!3194~3198:416~0@0
+85!3285~3289:417,39~2@0
+90!3459~3461:456,2~0@0
+91!3508~3512:458~0@0
+92!3577~3581:459,42~2@0
+96!3712~3715:501~0@0
+97!3760~3764:502,39~2@0
+100!3879~3883:541,40~2@0
+105!4015~4019:581,40~7@0
+108!4064~4068:621~0@0
+*R
+*F
+-TPCCPLTI.cbl
++ 0 TPCCPLTI.cbl
+/Users/ianw/DEMOS/DEVOPS/tpcc/cobol_source/TPCCPLTI.cbl
+*V
+VENDOR-NAME=Heirloom Computing
+PRODUCT-NAME=Elastic COBOL
+MAJOR-VERSION=18
+MINOR-VERSION=1
+SERVICE-VERSION=16
+*D
+@PGM
+tpccplti#
+@PARA
+main_paragraph#
+@VAR-INFO
+#tpccplti~1[ws-program-name:wrk.ws_program_name:x(8):0:1;ws-cwa-ptr:wrk.ws_cwa_ptr::0:0;ws-tpc-trace-module:wrk.ws_tpc_trace_module:x(8):0:0;ws-tpc-trace-module-ep:wrk.ws_tpc_trace_module_ep::0:1;ws-load-resp:wrk.ws_load_resp:s9(8) COMP:0:0;ws-release-resp:wrk.ws_release_resp:s9(8) COMP:0:1]~2[tpcc-cwa:lnk.tpcc_cwa::0:0[cwa-eyecatcher:lnk.cwa_eyecatcher_OF_tpcc_cwa:x(4):0:0[tpcc-eyecatcher:lnk.tpcc_eyecatcher_OF_cwa_eyecatcher_OF_tpcc_cwa::0:0];cwa-tpc-trace-module-name:lnk.cwa_tpc_trace_module_name_OF_tpcc_cwa:x(8):0:0[trace-module-missing:lnk.trace_module_missing_OF_cwa_tpc_trace_module_name_OF_tpcc_cwa::0:0];cwa-trace-options-array:lnk.cwa_trace_options_array_OF_tpcc_cwa::0:0[cwa-trace-sqlnord:lnk.cwa_trace_sqlnord_OF_cwa_trace_options_array_OF_tpcc_cwa:x(1):0:1[trace-sqlnord-cwa-88:(null)::0:1];cwa-trace-vsmnord:lnk.cwa_trace_vsmnord_OF_cwa_trace_options_array_OF_tpcc_cwa:x(1):0:1[trace-vsmnord-cwa-88:(null)::0:1];cwa-trace-sqlpaym:lnk.cwa_trace_sqlpaym_OF_cwa_trace_options_array_OF_tpcc_cwa:x(1):0:1[trace-sqlpaym-cwa-88:(null)::0:1];cwa-trace-vsmpaym:lnk.cwa_trace_vsmpaym_OF_cwa_trace_options_array_OF_tpcc_cwa:x(1):0:1[trace-vsmpaym-cwa-88:(null)::0:1];cwa-trace-sqlords:lnk.cwa_trace_sqlords_OF_cwa_trace_options_array_OF_tpcc_cwa:x(1):0:1[trace-sqlords-cwa-88:(null)::0:1];cwa-trace-vsmords:lnk.cwa_trace_vsmords_OF_cwa_trace_options_array_OF_tpcc_cwa:x(1):0:1[trace-vsmords-cwa-88:(null)::0:1];cwa-trace-sqldelv:lnk.cwa_trace_sqldelv_OF_cwa_trace_options_array_OF_tpcc_cwa:x(1):0:1[trace-sqldelv-cwa-88:(null)::0:1];cwa-trace-vsmdelv:lnk.cwa_trace_vsmdelv_OF_cwa_trace_options_array_OF_tpcc_cwa:x(1):0:1[trace-vsmdelv-cwa-88:(null)::0:1];cwa-trace-sqlstkl:lnk.cwa_trace_sqlstkl_OF_cwa_trace_options_array_OF_tpcc_cwa:x(1):0:1[trace-sqlstkl-cwa-88:(null)::0:1];cwa-trace-vsmstkl:lnk.cwa_trace_vsmstkl_OF_cwa_trace_options_array_OF_tpcc_cwa:x(1):0:1[trace-vsmstkl-cwa-88:(null)::0:1];cwa-trace-sqlload:lnk.cwa_trace_sqlload_OF_cwa_trace_options_array_OF_tpcc_cwa:x(1):0:1[trace-sqlload-cwa-88:(null)::0:1];cwa-trace-vsmload:lnk.cwa_trace_vsmload_OF_cwa_trace_options_array_OF_tpcc_cwa:x(1):0:1[trace-vsmload-cwa-88:(null)::0:1]]];dfheiblk:lnk.dfheiblk::0:0[eibtime:lnk.eibtime_OF_dfheiblk:S9(7):0:0;eibdate:lnk.eibdate_OF_dfheiblk:S9(7):0:0;eibtrnid:lnk.eibtrnid_OF_dfheiblk:X(4):0:0;eibtaskn:lnk.eibtaskn_OF_dfheiblk:S9(7):0:0;eibtrmid:lnk.eibtrmid_OF_dfheiblk:X(4):0:0;dfheigdi:lnk.dfheigdi_OF_dfheiblk:S9(4):0:0;eibcposn:lnk.eibcposn_OF_dfheiblk:S9(4):0:0;eibcalen:lnk.eibcalen_OF_dfheiblk:S9(4):0:0;eibaid:lnk.eibaid_OF_dfheiblk:X:0:0;eibfn:lnk.eibfn_OF_dfheiblk:X(2):0:0;eibrcode:lnk.eibrcode_OF_dfheiblk:X(6):0:0;eibds:lnk.eibds_OF_dfheiblk:X(8):0:0;eibreqid:lnk.eibreqid_OF_dfheiblk:X(8):0:0;eibrsrce:lnk.eibrsrce_OF_dfheiblk:X(8):0:0;eibsync:lnk.eibsync_OF_dfheiblk:X:0:0;eibfree:lnk.eibfree_OF_dfheiblk:X:0:0;eibrecv:lnk.eibrecv_OF_dfheiblk:X:0:0;eibfil01:lnk.eibfil01_OF_dfheiblk:X:0:0;eibatt:lnk.eibatt_OF_dfheiblk:X:0:0;eibeoc:lnk.eibeoc_OF_dfheiblk:X:0:0;eibfmh:lnk.eibfmh_OF_dfheiblk:X:0:0;eibcompl:lnk.eibcompl_OF_dfheiblk:X:0:0;eibsig:lnk.eibsig_OF_dfheiblk:X:0:0;eibconf:lnk.eibconf_OF_dfheiblk:X:0:0;eiberr:lnk.eiberr_OF_dfheiblk:X:0:0;eiberrcd:lnk.eiberrcd_OF_dfheiblk:X(4):0:0;eibsynrb:lnk.eibsynrb_OF_dfheiblk:X:0:0;eibnodat:lnk.eibnodat_OF_dfheiblk:X:0:0;eibresp:lnk.eibresp_OF_dfheiblk:S9(8):0:0;eibresp2:lnk.eibresp2_OF_dfheiblk:S9(8):0:0;eibrldbk:lnk.eibrldbk_OF_dfheiblk:X:0:0;eibsend:lnk.eibsend_OF_dfheiblk:X:0:0;eiberrmsg:lnk.eiberrmsg_OF_dfheiblk:X(2013):0:0;dibver:lnk.dibver_OF_dfheiblk:X(2):0:0;dibstat:lnk.dibstat_OF_dfheiblk:X(2):0:0;dibsegm:lnk.dibsegm_OF_dfheiblk:X(8):0:0;dibseglv:lnk.dibseglv_OF_dfheiblk:X(2):0:0;dibkfbl:lnk.dibkfbl_OF_dfheiblk:S9(4):0:0;dibdbdnm:lnk.dibdbdnm_OF_dfheiblk:X(8):0:0;dibdborg:lnk.dibdborg_OF_dfheiblk:X(8):0:0];dfhcommarea:lnk.dfhcommarea:X:0:0]
+*E

@@ -1,0 +1,13 @@
+14:45:15,639 INFO  [stdout] (default task-45) COUNTTHETIME:SQLORDS-SelectFromCustomer:48
+14:45:24,813 INFO  [stdout] (default task-47) COUNTTHETIME:SQLSTKL-SelectFromDistrict:7
+14:45:41,857 INFO  [stdout] (default task-50) COUNTTHETIME:SQLDEVL-SelectFromNewOrder:6
+14:45:41,862 INFO  [stdout] (default task-50) COUNTTHETIME:SQLDEVL-DeleteFromNewOrder:1
+14:45:41,863 INFO  [stdout] (default task-50) COUNTTHETIME:SQLDEVL-SelectFromOrders:1
+14:45:45,809 INFO  [stdout] (default task-51) COUNTTHETIME:SQLDEVL-SelectFromNewOrder:5
+14:45:45,814 INFO  [stdout] (default task-51) COUNTTHETIME:SQLDEVL-DeleteFromNewOrder:1
+14:45:45,815 INFO  [stdout] (default task-51) COUNTTHETIME:SQLDEVL-SelectFromOrders:1
+14:45:56,977 INFO  [stdout] (default task-52) COUNTTHETIME:SQLDEVL-SelectFromNewOrder:5
+14:45:56,981 INFO  [stdout] (default task-52) COUNTTHETIME:SQLDEVL-DeleteFromNewOrder:1
+14:45:56,982 INFO  [stdout] (default task-52) COUNTTHETIME:SQLDEVL-SelectFromOrders:1
+14:46:18,075 INFO  [stdout] (default task-56) COUNTTHETIME:SQLSTKL-SelectFromDistrict:7
+
