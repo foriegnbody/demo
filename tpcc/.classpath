@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="java_source"/>
+	<classpathentry kind="src" path="intermediate_java_code"/>
+	<classpathentry kind="src" path="resources"/>
+	<classpathentry kind="var" path="ELASTIC_COBOL_CORE/elastic_cobol/ecobol.jar"/>
+	<classpathentry kind="var" path="ELASTIC_COBOL_CORE/elastic_cobol/etrans.jar"/>
+	<classpathentry kind="var" path="ELASTIC_COBOL_CORE/elastic_cobol/lib/javaee-api-7.0.jar"/>
+	<classpathentry kind="var" path="ELASTIC_COBOL_CORE/elastic_cobol/lib/openejb-client-4.7.4.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="resources/postgresql-9.2-1003.jdbc4.jar"/>
+	<classpathentry kind="output" path=".executable"/>
+</classpath>

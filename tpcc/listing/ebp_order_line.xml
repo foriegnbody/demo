@@ -1,0 +1,96 @@
+<?xml version="1.0" standalone="yes"?>
+<dataset name="ol_record">
+
+<!-- 
+This file is compiler generated and is placed in 'listing' directory.
+This file provides the information (meta-data) needed to
+relate a VSAM file's record layout to the SQL table name and column names. The information
+needed to relate an SQL column to an elementary data item in a VSAM record layout is
+declared in a column element such as:
+<column name="ttldo" offset="36" length="4" usage="32" sqltype="A" table="ACCTFIL"/>
+The name of the SQL column is "ttldo". Usage 32 and length 4 mean CHAR(4). This column belongs
+in SQL table ACCTFIL. All table attributes in this file must be identical including case.
+The COBOL name of this elementary data item is unknown. The data item is located at byte
+number 36 from the start of the record layout; byte zero is at the start of the record. This
+data item is 4 bytes long.
+The generation of this file is controlled by compiler directive $XFD.
+So to generate this file, put a "$XFD" compiler directive
+just above the ACCTREC record definition, like this in your-COBOL-CICS-or-VSAM-PROGRAM.cbl:
+
+Example in your-cobol-VSAM-program.cbl:
+
+$XFD FILE="ACCTFIL.xml"
+01 ACCTREC.   | Begins VSAM file layout 
+   02 ACCTID         PIC X(5).  | KEY FIELD 
+   05 NAME.                     | ALTERNATE KEY 
+      10 LAST-NAME   PIC X(18). 
+      10 FIRST-NAME  PIC X(12). 
+   05 ADDRESS        PIC X(25). 
+     . . .
+
+EXEC CICS READ DATASET('ACCTFIL') RIDFLD(ACCTC) INTO(ACCTREC) END-EXEC. 
+     . . .
+
+The '$' symbol must be in the indicator column, which is the same column where you put 
+an '*' to indicate a comment line. Save and re-compile the program. You should see ACCTFIL.xml 
+in 'listing' directory. Note that 'ACCTFIL' is uppercase. This is because 'ACCTFIL' is the name of 
+the SQL table; Oracle names are case sensitive. 
+
+Copy this file from 'listing' directory to 'resources' directory. Now you may, if you wish, rename 
+this file to any name ending in *.xml; this name is case sensitive. 
+You must specify the name of this file in file 'project-etp_deploy_settings' of the ETP Deploy Wizard 
+project. To do so: double-click on file 'project-etp_deploy_settings' to open the ETP Deploy Wizard 
+settings editor; click File Control; click Add; for Source Name, enter the 
+the name of the DATASET (also known as FILE), which in the above example is 'acctfil' (without quotes); 
+for Destination Name, enter 'jdbc:' concatenated with the name of this file, so for our example, you 
+enter 'jdbc:ACCTFIL.xml' (without quotes). Destination name is case sensitive. 
+You have just related the VSAM file name used in COBOL programs with the name of this file. 
+
+Now you must hand-edit this file. 
+
+If the SQL column names (in the actual database table) have different names, then 
+you must update the name attributes in the column elements to reflect the actual SQL names used. 
+Change 'pay1_yyyymmdd' to 'pay1_date', 'pay2_yyyymmdd' to 'pay2_date', and 'pay3_yyyymmdd' to 'pay3_date'. 
+
+In the CICS READ example above, the RIDFLD value is found in the field called ACCTC. 
+RIDFLD stands for Record Identifier Field, which is the key key for the file. ACCTC is a field 
+that stores the value of the lookup field. By further examining this 
+(fictitious) program, you'll discover that ACCTC corresponds to SQL column 'acctid'. 
+So you must add the attribute 'ridfld="dup"' to the acctid column element in this file. 
+<column name="acctid" offset="0" length="5" usage="32" sqltype="A" table="ACCTFIL" ridfld="dup"/> 
+
+Otherwise, the CICS application would abort with AEIQ, and the web page would dump out a stack trace with error messages: 
+    RESP(IOERR=17) RESP2(0) ABCODE(AEIQ) (IOERR) 
+    java.sql.SQLException: ORA-00904: "RIDFLD": invalid identifier 
+
+ridfld="dupcheck" vs. ridfld="true": 'dupcheck' means to check for duplicate keys. 
+Use 'dupcheck' to emulate IBM CICS processing when DUPKEY condition 
+is raised; that is, dfhresp(DUPKEY) is true and EIBRESP = 15. The DUPKEY condition can be 
+raised for a READ, READNEXT or READPREV command. You most likely want to use 'dupcheck'. 
+Use 'true' if DUPKEY condition is never to be raised by COBOL programs; READ, 
+READNEXT and READPREV commands returns NORMAL (i.e., EIBRESP = 0) when reading duplicate 
+records. Using 'true' can simplify your COBOL code because usually your COBOL programs would not 
+require special processing for duplicate records. 'true' is an Elastic COBOL enhancement. 
+ridfld="dupcheck" may be abbreviated to ridfld="dup" or ridfld="d" or ridfld="D". 
+ridfld="true" may be abbreviated to ridfld="t" or ridfld="T". 
+
+Values of sqltype: B=group data item. A=alphanumeric. NZ=zoned decimal. NB=binary. NP=packed-decimal. 
+-->
+
+ <group name="ol_record" offset="0" length="116" usage="32" sqltype="B" table="ol_record">
+  <group name="order_line_key" offset="0" length="36" usage="32" sqltype="B" table="ol_record">
+   <group name="order_line_alt_key" offset="0" length="27" usage="32" sqltype="B" table="ol_record">
+    <column name="ol_w_id" offset="0" length="9" piclen="9" usage="18" sqltype="NZ"   picstring="s9(9) SIGN TRAILING" table="ol_record"/>
+    <column name="ol_d_id" offset="9" length="9" piclen="9" usage="18" sqltype="NZ"   picstring="s9(9) SIGN TRAILING" table="ol_record"/>
+    <column name="ol_o_id" offset="18" length="9" piclen="9" usage="18" sqltype="NZ"   picstring="s9(9) SIGN TRAILING" table="ol_record"/>
+   </group>
+   <column name="ol_number" offset="27" length="9" piclen="9" usage="18" sqltype="NZ"   picstring="s9(9) SIGN TRAILING" table="ol_record"/>
+  </group>
+  <column name="ol_i_id" offset="36" length="9" piclen="9" usage="18" sqltype="NZ"   picstring="s9(9) SIGN TRAILING" table="ol_record"/>
+  <column name="ol_supply_w_id" offset="45" length="9" piclen="9" usage="18" sqltype="NZ"   picstring="s9(9) SIGN TRAILING" table="ol_record"/>
+  <column name="ol_delivery_d" offset="54" length="20" piclen="20" usage="0" sqltype="A"   picstring="x(20)" table="ol_record"/>
+  <column name="ol_quantity" offset="74" length="9" piclen="9" usage="18" sqltype="NZ"   picstring="s9(9) SIGN TRAILING" table="ol_record"/>
+  <column name="ol_amount" offset="83" length="9" piclen="9" usage="18" sqltype="NZ"   picstring="s9(9) SIGN TRAILING" table="ol_record"/>
+  <column name="ol_dist_info" offset="92" length="24" piclen="24" usage="0" sqltype="A"   picstring="x(24)" table="ol_record"/>
+ </group>
+</dataset>

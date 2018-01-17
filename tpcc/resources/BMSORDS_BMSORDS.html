@@ -1,0 +1,187 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+   <head>
+      <title>Elastic Transaction Platform</title>
+      <meta http-equiv="Content-Type"
+         content="text/html; charset=iso-8859-1">
+      <meta http-equiv="PRAGMA" content="NO-CACHE">
+      <meta name="generator" content="Elastic Transaction Platform">
+      <link rel="stylesheet" type="text/css" href="css/etpbms_stylesheet.css">
+      <script type="text/javascript">
+      <!--
+         var termLines=24;
+         var termColumns=80;
+      // -->
+      </script>
+      <script type="text/javascript" src="scripts/etpbms_keymap.js"></script>
+      <script type="text/javascript" src="scripts/etpbms_interaction.js"></script>
+   </head>
+   <body onLoad="focusOnEditableField('&DFH_CURSOR;');">
+      <form name="BMSORDS" method="POST" action="&DFH_ACTION_URL;">
+         <input type="hidden" name="DFH_CURSOR" value="&DFH_CURSOR;">
+         <div id="screen">
+            <div id="floatfix">
+               <div id="screenimage">
+                  <pre class="line1 col34 norm">Order Status</pre>
+                  <pre class="line1 col73 norm">bmsords</pre>
+                  <pre class="line3 col5 norm">Warehouse:</pre>
+                  <pre id="ORDSWID" class="line3 col16 norm">&ORDSWID;</pre>
+                  <pre class="line3 col23 norm">District:</pre>
+                  <input name="ORDSDID" class="mapfield len2 line3 col33 norm" type="text"
+                     size="2" maxlength="2" onFocus="setCurrentField(this)"
+                     value="&ORDSDID;">
+                  <pre class="line3 col36 norm"></pre>
+                  <pre class="line4 col6 norm">Customer:</pre>
+                  <input name="ORDSCID" class="mapfield len4 line4 col16 norm" type="text"
+                     size="4" maxlength="4" onFocus="setCurrentField(this)"
+                     value="&ORDSCID;">
+                  <pre class="line4 col21 norm"></pre>
+                  <pre class="line4 col27 norm">Name:</pre>
+                  <pre id="ORDSFNM" class="line4 col33 norm">&ORDSFNM;                </pre>
+                  <pre id="ORDSMNM" class="line4 col50 norm">&ORDSMNM;</pre>
+                  <input name="ORDSLNM" class="mapfield len16 line4 col53 norm" type="text"
+                     size="16" maxlength="16" onFocus="setCurrentField(this)"
+                     value="&ORDSLNM;">
+                  <pre class="line4 col70 norm"></pre>
+                  <pre class="line5 col2 norm">Cust-Balance:</pre>
+                  <pre id="ORDSBAL" class="line5 col16 norm">&ORDSBAL;</pre>
+                  <pre class="line6 col2 norm">Order Number:</pre>
+                  <pre id="ORDSOID" class="line6 col16 norm">&ORDSOID;</pre>
+                  <pre class="line6 col25 norm">Entry Date:</pre>
+                  <pre id="ORDSEDT" class="line6 col37 norm">&ORDSEDT;                   </pre>
+                  <pre class="line6 col57 norm">Carrier Number:</pre>
+                  <pre id="ORDSXID" class="line6 col73 norm">&ORDSXID;</pre>
+                  <pre class="line7 col2 norm">Supply-W</pre>
+                  <pre class="line7 col13 norm">Item-Id</pre>
+                  <pre class="line7 col23 norm">Qty</pre>
+                  <pre class="line7 col30 norm">Amount</pre>
+                  <pre class="line7 col39 norm">Delivery-Date</pre>
+                  <pre id="ORDSSWH" class="line8 col4 norm">&ORDSSWH;</pre>
+                  <pre id="ORDSITM" class="line8 col14 norm">&ORDSITM;</pre>
+                  <pre id="ORDSQTY" class="line8 col24 norm">&ORDSQTY;</pre>
+                  <pre id="ORDSAMT" class="line8 col28 norm">&ORDSAMT;</pre>
+                  <pre id="ORDSDDT" class="line8 col40 norm">&ORDSDDT;          </pre>
+                  <pre id="ORDS091" class="line9 col4 norm">&ORDS091;</pre>
+                  <pre id="ORDS092" class="line9 col14 norm">&ORDS092;</pre>
+                  <pre id="ORDS093" class="line9 col24 norm">&ORDS093;</pre>
+                  <pre id="ORDS094" class="line9 col28 norm">&ORDS094;</pre>
+                  <pre id="ORDS095" class="line9 col40 norm">&ORDS095;          </pre>
+                  <pre id="ORDS101" class="line10 col4 norm">&ORDS101;</pre>
+                  <pre id="ORDS102" class="line10 col14 norm">&ORDS102;</pre>
+                  <pre id="ORDS103" class="line10 col24 norm">&ORDS103;</pre>
+                  <pre id="ORDS104" class="line10 col28 norm">&ORDS104;</pre>
+                  <pre id="ORDS105" class="line10 col40 norm">&ORDS105;          </pre>
+                  <pre id="ORDS111" class="line11 col4 norm">&ORDS111;</pre>
+                  <pre id="ORDS112" class="line11 col14 norm">&ORDS112;</pre>
+                  <pre id="ORDS113" class="line11 col24 norm">&ORDS113;</pre>
+                  <pre id="ORDS114" class="line11 col28 norm">&ORDS114;</pre>
+                  <pre id="ORDS115" class="line11 col40 norm">&ORDS115;          </pre>
+                  <pre id="ORDS121" class="line12 col4 norm">&ORDS121;</pre>
+                  <pre id="ORDS122" class="line12 col14 norm">&ORDS122;</pre>
+                  <pre id="ORDS123" class="line12 col24 norm">&ORDS123;</pre>
+                  <pre id="ORDS124" class="line12 col28 norm">&ORDS124;</pre>
+                  <pre id="ORDS125" class="line12 col40 norm">&ORDS125;          </pre>
+                  <pre id="ORDS131" class="line13 col4 norm">&ORDS131;</pre>
+                  <pre id="ORDS132" class="line13 col14 norm">&ORDS132;</pre>
+                  <pre id="ORDS133" class="line13 col24 norm">&ORDS133;</pre>
+                  <pre id="ORDS134" class="line13 col28 norm">&ORDS134;</pre>
+                  <pre id="ORDS135" class="line13 col40 norm">&ORDS135;          </pre>
+                  <pre id="ORDS141" class="line14 col4 norm">&ORDS141;</pre>
+                  <pre id="ORDS142" class="line14 col14 norm">&ORDS142;</pre>
+                  <pre id="ORDS143" class="line14 col24 norm">&ORDS143;</pre>
+                  <pre id="ORDS144" class="line14 col28 norm">&ORDS144;</pre>
+                  <pre id="ORDS145" class="line14 col40 norm">&ORDS145;          </pre>
+                  <pre id="ORDS151" class="line15 col4 norm">&ORDS151;</pre>
+                  <pre id="ORDS152" class="line15 col14 norm">&ORDS152;</pre>
+                  <pre id="ORDS153" class="line15 col24 norm">&ORDS153;</pre>
+                  <pre id="ORDS154" class="line15 col28 norm">&ORDS154;</pre>
+                  <pre id="ORDS155" class="line15 col40 norm">&ORDS155;          </pre>
+                  <pre id="ORDS161" class="line16 col4 norm">&ORDS161;</pre>
+                  <pre id="ORDS162" class="line16 col14 norm">&ORDS162;</pre>
+                  <pre id="ORDS163" class="line16 col24 norm">&ORDS163;</pre>
+                  <pre id="ORDS164" class="line16 col28 norm">&ORDS164;</pre>
+                  <pre id="ORDS165" class="line16 col40 norm">&ORDS165;          </pre>
+                  <pre id="ORDS171" class="line17 col4 norm">&ORDS171;</pre>
+                  <pre id="ORDS172" class="line17 col14 norm">&ORDS172;</pre>
+                  <pre id="ORDS173" class="line17 col24 norm">&ORDS173;</pre>
+                  <pre id="ORDS174" class="line17 col28 norm">&ORDS174;</pre>
+                  <pre id="ORDS175" class="line17 col40 norm">&ORDS175;          </pre>
+                  <pre id="ORDS181" class="line18 col4 norm">&ORDS181;</pre>
+                  <pre id="ORDS182" class="line18 col14 norm">&ORDS182;</pre>
+                  <pre id="ORDS183" class="line18 col24 norm">&ORDS183;</pre>
+                  <pre id="ORDS184" class="line18 col28 norm">&ORDS184;</pre>
+                  <pre id="ORDS185" class="line18 col40 norm">&ORDS185;          </pre>
+                  <pre id="ORDS191" class="line19 col4 norm">&ORDS191;</pre>
+                  <pre id="ORDS192" class="line19 col14 norm">&ORDS192;</pre>
+                  <pre id="ORDS193" class="line19 col24 norm">&ORDS193;</pre>
+                  <pre id="ORDS194" class="line19 col28 norm">&ORDS194;</pre>
+                  <pre id="ORDS195" class="line19 col40 norm">&ORDS195;          </pre>
+                  <pre id="ORDS201" class="line20 col4 norm">&ORDS201;</pre>
+                  <pre id="ORDS202" class="line20 col14 norm">&ORDS202;</pre>
+                  <pre id="ORDS203" class="line20 col24 norm">&ORDS203;</pre>
+                  <pre id="ORDS204" class="line20 col28 norm">&ORDS204;</pre>
+                  <pre id="ORDS205" class="line20 col40 norm">&ORDS205;          </pre>
+                  <pre id="ORDS211" class="line21 col4 norm">&ORDS211;</pre>
+                  <pre id="ORDS212" class="line21 col14 norm">&ORDS212;</pre>
+                  <pre id="ORDS213" class="line21 col24 norm">&ORDS213;</pre>
+                  <pre id="ORDS214" class="line21 col28 norm">&ORDS214;</pre>
+                  <pre id="ORDS215" class="line21 col40 norm">&ORDS215;          </pre>
+                  <pre id="ORDS221" class="line22 col4 norm">&ORDS221;</pre>
+                  <pre id="ORDS222" class="line22 col14 norm">&ORDS222;</pre>
+                  <pre id="ORDS223" class="line22 col24 norm">&ORDS223;</pre>
+                  <pre id="ORDS224" class="line22 col28 norm">&ORDS224;</pre>
+                  <pre id="ORDS225" class="line22 col40 norm">&ORDS225;          </pre>
+                  <pre id="ORDSMSG" class="line23 col2 norm">&ORDSMSG;                                                                               </pre>
+                  <pre class="line24 col2 norm">F1</pre>
+                  <pre class="line24 col5 brt">New Order </pre>
+                  <pre class="line24 col16 norm">F2</pre>
+                  <pre class="line24 col19 brt">Payment </pre>
+                  <pre class="line24 col28 norm">F3</pre>
+                  <pre class="line24 col31 brt">Order Status </pre>
+                  <pre class="line24 col45 norm">F4</pre>
+                  <pre class="line24 col48 brt">Delivery </pre>
+                  <pre class="line24 col58 norm">F5</pre>
+                  <pre class="line24 col61 brt">Stock Level </pre>
+                  <pre class="line24 col74 norm">F6</pre>
+                  <pre class="line24 col77 brt">Menu</pre>
+               </div>
+            </div>
+            <div id="floatfix">
+               <div id="buttonpanel">
+                  <input class="pkey f1" type="submit" name="DFH_PF1" value="PF1">
+                  <input class="pkey f2" type="submit" name="DFH_PF2" value="PF2">
+                  <input class="pkey f3" type="submit" name="DFH_PF3" value="PF3">
+                  <input class="pkey f4" type="submit" name="DFH_PF4" value="PF4">
+                  <input class="pkey f5" type="submit" name="DFH_PF5" value="PF5">
+                  <input class="pkey f6" type="submit" name="DFH_PF6" value="PF6">
+                  <input class="pkey f7" type="submit" name="DFH_PF7" value="PF7">
+                  <input class="pkey f8" type="submit" name="DFH_PF8" value="PF8">
+                  <input class="pkey f9" type="submit" name="DFH_PF9" value="PF9">
+                  <input class="pkey f10" type="submit" name="DFH_PF10" value="PF10">
+                  <input class="pkey f11" type="submit" name="DFH_PF11" value="PF11">
+                  <input class="pkey f12" type="submit" name="DFH_PF12" value="PF12">
+                  <input class="pkey f13" type="submit" name="DFH_PF13" value="PF13">
+                  <input class="pkey f14" type="submit" name="DFH_PF14" value="PF14">
+                  <input class="pkey f15" type="submit" name="DFH_PF15" value="PF15">
+                  <input class="pkey f16" type="submit" name="DFH_PF16" value="PF16">
+                  <input class="pkey f17" type="submit" name="DFH_PF17" value="PF17">
+                  <input class="pkey f18" type="submit" name="DFH_PF18" value="PF18">
+                  <input class="pkey f19" type="submit" name="DFH_PF19" value="PF19">
+                  <input class="pkey f20" type="submit" name="DFH_PF20" value="PF20">
+                  <input class="pkey f21" type="submit" name="DFH_PF21" value="PF21">
+                  <input class="pkey f22" type="submit" name="DFH_PF22" value="PF22">
+                  <input class="pkey f23" type="submit" name="DFH_PF23" value="PF23">
+                  <input class="pkey f24" type="submit" name="DFH_PF24" value="PF24">
+                  <input class="pkey a1" type="submit" name="DFH_PA1" value="PA1">
+                  <input class="pkey a2" type="submit" name="DFH_PA2" value="PA2">
+                  <input class="pkey a3" type="submit" name="DFH_PA3" value="PA3">
+                  <input class="clearkey" type="submit" name="DFH_CLEAR" value="Clear">
+                  <input class="resetkey" type="reset" value="Reset">
+                  <input class="enterkey" type="submit" name="DFH_ENTER" value="Enter">
+               </div>
+            </div>
+         </div>
+      </form>
+   </body>
+</html>
+

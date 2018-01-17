@@ -1,0 +1,147 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+   <head>
+      <title>Elastic Transaction Platform</title>
+      <meta http-equiv="Content-Type"
+         content="text/html; charset=iso-8859-1">
+      <meta http-equiv="PRAGMA" content="NO-CACHE">
+      <meta name="generator" content="Elastic Transaction Platform">
+      <link rel="stylesheet" type="text/css" href="css/etpbms_stylesheet.css">
+      <script type="text/javascript">
+      <!--
+         var termLines=24;
+         var termColumns=80;
+      // -->
+      </script>
+      <script type="text/javascript" src="scripts/etpbms_keymap.js"></script>
+      <script type="text/javascript" src="scripts/etpbms_interaction.js"></script>
+   </head>
+   <body onLoad="focusOnEditableField('&DFH_CURSOR;');">
+      <form name="BMSPAYM" method="POST" action="&DFH_ACTION_URL;">
+         <input type="hidden" name="DFH_CURSOR" value="&DFH_CURSOR;">
+         <div id="screen">
+            <div id="floatfix">
+               <div id="screenimage">
+                  <pre class="line1 col37 norm">Payment</pre>
+                  <pre class="line1 col73 norm">bmspaym</pre>
+                  <pre class="line3 col11 norm">Date:</pre>
+                  <pre id="PAYMHDT" class="line3 col17 norm">&PAYMHDT;                   </pre>
+                  <pre class="line5 col2 norm">Warehouse:</pre>
+                  <pre id="PAYMWID" class="line5 col13 norm">&PAYMWID;</pre>
+                  <pre class="line5 col41 norm">District:</pre>
+                  <input name="PAYMDID" class="mapfield len2 line5 col51 norm" type="text"
+                     size="2" maxlength="2" onFocus="setCurrentField(this)"
+                     value="&PAYMDID;">
+                  <pre class="line5 col54 norm"></pre>
+                  <pre id="PAYMWS1" class="line6 col2 norm">&PAYMWS1;                    </pre>
+                  <pre id="PAYMDS1" class="line6 col41 norm">&PAYMDS1;                    </pre>
+                  <pre id="PAYMWS2" class="line7 col2 norm">&PAYMWS2;                    </pre>
+                  <pre id="PAYMDS2" class="line7 col41 norm">&PAYMDS2;                    </pre>
+                  <pre id="PAYMWCT" class="line8 col2 norm">&PAYMWCT;                    </pre>
+                  <pre id="PAYMWST" class="line8 col23 norm">&PAYMWST;</pre>
+                  <pre id="PAYMWZP" class="line8 col26 norm">&PAYMWZP;</pre>
+                  <pre id="PAYMDCT" class="line8 col41 norm">&PAYMDCT;                    </pre>
+                  <pre id="PAYMDST" class="line8 col62 norm">&PAYMDST;</pre>
+                  <pre id="PAYMDZP" class="line8 col65 norm">&PAYMDZP;</pre>
+                  <pre class="line10 col7 norm">Customer:</pre>
+                  <input name="PAYMCID" class="mapfield len4 line10 col17 norm" type="text"
+                     size="4" maxlength="4" onFocus="setCurrentField(this)"
+                     value="&PAYMCID;">
+                  <pre class="line10 col22 norm"></pre>
+                  <pre class="line10 col23 norm">Cust-Warehouse:</pre>
+                  <input name="PAYMCWI" class="mapfield len4 line10 col39 norm" type="text"
+                     size="4" maxlength="4" onFocus="setCurrentField(this)"
+                     value="&PAYMCWI;">
+                  <pre class="line10 col44 norm"></pre>
+                  <pre class="line10 col46 norm">Cust-District:</pre>
+                  <input name="PAYMCDI" class="mapfield len2 line10 col61 norm" type="text"
+                     size="2" maxlength="2" onFocus="setCurrentField(this)"
+                     value="&PAYMCDI;">
+                  <pre class="line10 col64 norm"></pre>
+                  <pre class="line11 col11 norm">Name:</pre>
+                  <pre id="PAYMFNM" class="line11 col17 norm">&PAYMFNM;                </pre>
+                  <pre id="PAYMMNM" class="line11 col34 norm">&PAYMMNM;</pre>
+                  <input name="PAYMLNM" class="mapfield len16 line11 col37 norm" type="text"
+                     size="16" maxlength="16" onFocus="setCurrentField(this)"
+                     value="&PAYMLNM;">
+                  <pre class="line11 col54 norm">Since:</pre>
+                  <pre id="PAYMSIN" class="line11 col61 norm">&PAYMSIN;          </pre>
+                  <pre id="PAYMCS1" class="line12 col17 norm">&PAYMCS1;                    </pre>
+                  <pre class="line12 col53 norm">Credit:</pre>
+                  <pre id="PAYMCRD" class="line12 col61 norm">&PAYMCRD;</pre>
+                  <pre id="PAYMCS2" class="line13 col17 norm">&PAYMCS2;                    </pre>
+                  <pre class="line13 col55 norm">Disc:</pre>
+                  <pre id="PAYMDSC" class="line13 col61 norm">&PAYMDSC;</pre>
+                  <pre id="PAYMCTY" class="line14 col17 norm">&PAYMCTY;                    </pre>
+                  <pre id="PAYMSTA" class="line14 col38 norm">&PAYMSTA;</pre>
+                  <pre id="PAYMZIP" class="line14 col41 norm">&PAYMZIP;</pre>
+                  <pre class="line14 col54 norm">Phone:</pre>
+                  <pre id="PAYMTEL" class="line14 col61 norm">&PAYMTEL;                   </pre>
+                  <pre class="line16 col4 norm">Amount Paid:</pre>
+                  <input name="PAYMPAY" class="mapfield len7 line16 col17 norm" type="text"
+                     size="7" maxlength="7" onFocus="setCurrentField(this)"
+                     value="&PAYMPAY;">
+                  <pre class="line16 col25 norm"></pre>
+                  <pre class="line16 col42 norm">New Cust-Ballance:</pre>
+                  <pre id="PAYMBAL" class="line16 col61 norm">&PAYMBAL;              </pre>
+                  <pre class="line17 col3 norm">Credit Limit:</pre>
+                  <pre id="PAYMCLM" class="line17 col17 norm">&PAYMCLM;</pre>
+                  <pre class="line19 col2 norm">Customer Data:</pre>
+                  <pre id="PAYMCD1" class="line19 col17 norm">&PAYMCD1;                                                  </pre>
+                  <pre id="PAYMCD2" class="line20 col17 norm">&PAYMCD2;                                                  </pre>
+                  <pre id="PAYMCD3" class="line21 col17 norm">&PAYMCD3;                                                  </pre>
+                  <pre id="PAYMCD4" class="line22 col17 norm">&PAYMCD4;                                                  </pre>
+                  <pre id="PAYMMSG" class="line23 col2 norm">&PAYMMSG;                                                                               </pre>
+                  <pre class="line24 col2 norm">F1</pre>
+                  <pre class="line24 col5 brt">New Order </pre>
+                  <pre class="line24 col16 norm">F2</pre>
+                  <pre class="line24 col19 brt">Payment </pre>
+                  <pre class="line24 col28 norm">F3</pre>
+                  <pre class="line24 col31 brt">Order Status </pre>
+                  <pre class="line24 col45 norm">F4</pre>
+                  <pre class="line24 col48 brt">Delivery </pre>
+                  <pre class="line24 col58 norm">F5</pre>
+                  <pre class="line24 col61 brt">Stock Level </pre>
+                  <pre class="line24 col74 norm">F6</pre>
+                  <pre class="line24 col77 brt">Menu</pre>
+               </div>
+            </div>
+            <div id="floatfix">
+               <div id="buttonpanel">
+                  <input class="pkey f1" type="submit" name="DFH_PF1" value="PF1">
+                  <input class="pkey f2" type="submit" name="DFH_PF2" value="PF2">
+                  <input class="pkey f3" type="submit" name="DFH_PF3" value="PF3">
+                  <input class="pkey f4" type="submit" name="DFH_PF4" value="PF4">
+                  <input class="pkey f5" type="submit" name="DFH_PF5" value="PF5">
+                  <input class="pkey f6" type="submit" name="DFH_PF6" value="PF6">
+                  <input class="pkey f7" type="submit" name="DFH_PF7" value="PF7">
+                  <input class="pkey f8" type="submit" name="DFH_PF8" value="PF8">
+                  <input class="pkey f9" type="submit" name="DFH_PF9" value="PF9">
+                  <input class="pkey f10" type="submit" name="DFH_PF10" value="PF10">
+                  <input class="pkey f11" type="submit" name="DFH_PF11" value="PF11">
+                  <input class="pkey f12" type="submit" name="DFH_PF12" value="PF12">
+                  <input class="pkey f13" type="submit" name="DFH_PF13" value="PF13">
+                  <input class="pkey f14" type="submit" name="DFH_PF14" value="PF14">
+                  <input class="pkey f15" type="submit" name="DFH_PF15" value="PF15">
+                  <input class="pkey f16" type="submit" name="DFH_PF16" value="PF16">
+                  <input class="pkey f17" type="submit" name="DFH_PF17" value="PF17">
+                  <input class="pkey f18" type="submit" name="DFH_PF18" value="PF18">
+                  <input class="pkey f19" type="submit" name="DFH_PF19" value="PF19">
+                  <input class="pkey f20" type="submit" name="DFH_PF20" value="PF20">
+                  <input class="pkey f21" type="submit" name="DFH_PF21" value="PF21">
+                  <input class="pkey f22" type="submit" name="DFH_PF22" value="PF22">
+                  <input class="pkey f23" type="submit" name="DFH_PF23" value="PF23">
+                  <input class="pkey f24" type="submit" name="DFH_PF24" value="PF24">
+                  <input class="pkey a1" type="submit" name="DFH_PA1" value="PA1">
+                  <input class="pkey a2" type="submit" name="DFH_PA2" value="PA2">
+                  <input class="pkey a3" type="submit" name="DFH_PA3" value="PA3">
+                  <input class="clearkey" type="submit" name="DFH_CLEAR" value="Clear">
+                  <input class="resetkey" type="reset" value="Reset">
+                  <input class="enterkey" type="submit" name="DFH_ENTER" value="Enter">
+               </div>
+            </div>
+         </div>
+      </form>
+   </body>
+</html>
+
