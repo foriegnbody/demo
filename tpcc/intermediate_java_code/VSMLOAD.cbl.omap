@@ -6,10 +6,10 @@ SC##28
 SN##29
 DD##34
 WRK##35
-CP#tpcfiles#52#/Users/ianw/Sites/heirloom_docker/heirloom_src/volume/heirloom_src/test/tpcc/copylib/tpcfiles.cpy
-CP#cicserrd#54#/Users/ianw/Sites/heirloom_docker/heirloom_src/volume/heirloom_src/test/tpcc/copylib/cicserrd.cpy
+CP#tpcfiles#52#/Users/ianw/DEMOS/DEVOPS/tpcc/copylib/tpcfiles.cpy
+CP#cicserrd#54#/Users/ianw/DEMOS/DEVOPS/tpcc/copylib/cicserrd.cpy
 LNK##204
-CP#tpccoptn#208#/Users/ianw/Sites/heirloom_docker/heirloom_src/volume/heirloom_src/test/tpcc/copylib/tpccoptn.cpy
+CP#tpccoptn#208#/Users/ianw/DEMOS/DEVOPS/tpcc/copylib/tpccoptn.cpy
 PD##210
 SEC#MAIN#216
 PARA#MAIN-PARA#217
@@ -48,4 +48,4 @@ PARA#DISPLAY-DOT-PARA#1463
 SEC#DISPLAY-NUMBER#1476
 PARA#DISPLAY-NUMBER-PARA#1477
 SEC#CICSERROR#1499
-CP#CICSERR#1501#/Users/ianw/Sites/heirloom_docker/heirloom_src/volume/heirloom_src/test/tpcc/copylib/CICSERR.cpy
+CP#CICSERR#1501#/Users/ianw/DEMOS/DEVOPS/tpcc/copylib/CICSERR.cpy

@@ -1,0 +1,26 @@
+# Elastic Transaction Platform deploy settings
+_projects=tpcc
+application.description=HCI TPC-C Benchmarking ElasticCOBOL app
+application.display_name=TPCC
+program.sqldelv=sqldelv
+program.sqlload=sqlload
+program.sqlnord=sqlnord
+program.sqlords=sqlords
+program.sqlpaym=sqlpaym
+program.sqlstkl=sqlstkl
+program.tpccbmsm=tpccbmsm
+program.tpccerrs=tpccerrs
+program.tpccplti=tpccplti
+sql.default.driver=com.vmware.sqlfire.jdbc.ClientDriver
+sql.default.password=tpcc
+sql.default.url=jdbc:sqlfire://localhost:1527
+sql.default.user=tpcc
+sysid=tpcc
+transaction.delv=sqldelv
+transaction.init=tpccbmsm
+transaction.load=sqlload
+transaction.nord=sqlnord
+transaction.ords=sqlords
+transaction.paym=sqlpaym
+transaction.stkl=sqlstkl
+web.servlet.display_name=TPCC

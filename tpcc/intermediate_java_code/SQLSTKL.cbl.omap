@@ -6,11 +6,11 @@ SC##28
 SN##29
 DD##34
 WRK##36
-CP#SQLCA#40#/Users/ianw/Sites/heirloom_docker/heirloom_src/volume/heirloom_src/test/tpcc/copylib/SQLCA.cpy
-CP#TPCC#42#/Users/ianw/Sites/heirloom_docker/heirloom_src/volume/heirloom_src/test/tpcc/copylib/TPCC.cpy
-CP#tpctdata#78#/Users/ianw/Sites/heirloom_docker/heirloom_src/volume/heirloom_src/test/tpcc/copylib/tpctdata.cpy
+CP#SQLCA#40#/Users/ianw/DEMOS/DEVOPS/tpcc/copylib/SQLCA.cpy
+CP#TPCC#42#/Users/ianw/DEMOS/DEVOPS/tpcc/copylib/TPCC.cpy
+CP#tpctdata#78#/Users/ianw/DEMOS/DEVOPS/tpcc/copylib/tpctdata.cpy
 LNK##81
-CP#cpystkl#85#/Users/ianw/Sites/heirloom_docker/heirloom_src/volume/heirloom_src/test/tpcc/copylib/cpystkl.cpy
+CP#cpystkl#85#/Users/ianw/DEMOS/DEVOPS/tpcc/copylib/cpystkl.cpy
 PD##87
 PARA#MAIN#88
 PARA#SQLERR#172
