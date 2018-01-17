@@ -1,1 +1,11 @@
+<project>
+
+    <target name="clean">
+    </target>
+
+    <target name="release">
+    </target>
+
+
+</project>
 
