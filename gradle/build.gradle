@@ -30,7 +30,7 @@ cargoRunLocal.dependsOn assemble  //this will assemble the war every time we do 
 
 //cargo config, download a local copy of tomcat
 cargo {
-    containerId = 'tomcat7x'
+    containerId = 'tomcat8x'
 
     // http://localhost:8080/onld/onld should bring up the screen..
     deployable {
