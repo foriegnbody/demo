@@ -54,7 +54,7 @@ cargo {
     }
 
     remote {
-    hostname = 'localhost'
+    hostname = '192.168.1.102'
     username = 'admin'
     password = 'password'
   }
