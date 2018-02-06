@@ -16,7 +16,7 @@ task compileCobol {
 
     def sourceDir = '../tpcc/cobol_source'
     def targetDir = '../tpcc/intermediate_java_code'
-    def ecobolExe = OperatingSystem.current().isMacOsX() ? './ecobolbin/bin/macosx/x86_64/ecobol' : './ecobolbin/bin/win64/x86_64/ecobol';
+    def ecobolExe = OperatingSystem.current().isMacOsX() ? './ecobolbin/bin/macosx/x86_64/ecobol' : './ecobolbin/bin/linux/x86_64/ecobol';
 
     doLast {
 
