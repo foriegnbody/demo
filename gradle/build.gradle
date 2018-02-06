@@ -35,7 +35,7 @@ cargo {
     // http://localhost:8080/onld/onld should bring up the screen..
     deployable {
         file = file("$buildDir/libs/webtest-1.0-SNAPSHOT.war")
-        context = 'onld'
+        context = 'tpcc'
     }
     local {
         installer {
