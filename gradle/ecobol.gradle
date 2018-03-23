@@ -22,7 +22,9 @@ task compileCobol {
 
         file(sourceDir).eachFile { aFile ->
             if (aFile.name.endsWith("cbl")) {
-                def proc  = "$ecobolExe -v -cc $sourceDir/$aFile.name -out:dir $targetDir".execute();
+                def proc  = "chmod 755 $ecobolExe".execute();
+                proc.waitFor();
+                proc  = "$ecobolExe -v -cc $sourceDir/$aFile.name -out:dir $targetDir".execute();
                 proc.waitFor();
                 if (proc.exitValue() != 0) {
                     println "stderr: ${proc.err.text}"
