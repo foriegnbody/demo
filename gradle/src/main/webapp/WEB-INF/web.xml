@@ -93,7 +93,7 @@
       </init-param>
       <init-param>
          <param-name>sql.default.driver</param-name>
-         <param-value>org.postgresql.Driver</param-value>
+         <param-value>com.microsoft.sqlserver.jdbc.SQLServerDriver</param-value>
       </init-param>
       <init-param>
          <param-name>sql.default.isolation</param-name>
@@ -113,7 +113,7 @@
       </init-param>
       <init-param>
          <param-name>sql.default.user</param-name>
-         <param-value>postgres</param-value>
+         <param-value>heirloom@heirloomtpcc</param-value>
       </init-param>
       <init-param>
          <param-name>sysid</param-name>
