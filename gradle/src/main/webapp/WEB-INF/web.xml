@@ -109,7 +109,7 @@
       </init-param>
       <init-param>
          <param-name>sql.default.url</param-name>
-         <param-value>jdbc:postgresql://localhost/tpcc</param-value>
+         <param-value>jdbc:sqlserver://heirloomtpcc.database.windows.net:1433;database=HeirloomAzureDB;user=heirloom@heirloomtpcc;password=Heirloomtpcc;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;</param-value>
       </init-param>
       <init-param>
          <param-name>sql.default.user</param-name>
