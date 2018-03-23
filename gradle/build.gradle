@@ -31,6 +31,7 @@ cargoRunLocal.dependsOn assemble  //this will assemble the war every time we do 
 //cargo config, download a local copy of tomcat
 cargo {
     containerId = 'tomcat8x'
+    port = 80 
 
     // http://localhost:8080/onld/onld should bring up the screen..
     deployable {
@@ -49,18 +50,18 @@ cargo {
         timeout = 60000
 
         containerProperties {
-                property 'cargo.tomcat.ajp.port', 8080
+                property 'cargo.tomcat.ajp.port', 80
         }
     }
 
     remote {
-    hostname = '192.168.1.102'
+    hostname = 'tomcatdemoserver.azurewebsites.net'
     username = 'admin'
-    password = 'password'
+    password = 'admin'
   }
 }
 
-sourceCompatibility = 1.8
+sourceCompatibility = 1.7
 
 repositories {
     mavenCentral()
