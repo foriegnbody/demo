@@ -1,0 +1,16 @@
+ID##1
+PID#sqlstkl#1
+ED##27
+CS##28
+SC##28
+SN##29
+DD##34
+WRK##36
+CP#SQLCA#40#/Users/ianw/DEMOS/DEVOPS/tpcc/copylib/SQLCA.cpy
+CP#TPCC#42#/Users/ianw/DEMOS/DEVOPS/tpcc/copylib/TPCC.cpy
+CP#tpctdata#78#/Users/ianw/DEMOS/DEVOPS/tpcc/copylib/tpctdata.cpy
+LNK##81
+CP#cpystkl#85#/Users/ianw/DEMOS/DEVOPS/tpcc/copylib/cpystkl.cpy
+PD##87
+PARA#MAIN#88
+PARA#SQLERR#172

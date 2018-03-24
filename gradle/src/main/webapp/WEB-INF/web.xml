@@ -101,7 +101,7 @@
       </init-param>
       <init-param>
          <param-name>sql.default.password</param-name>
-         <param-value>abc000</param-value>
+         <param-value>TPCCpassword1</param-value>
       </init-param>
       <init-param>
          <param-name>sql.default.readonly</param-name>
