@@ -55,7 +55,7 @@ cargo {
     }
 
     remote {
-    hostname = 'tomcatdemoserver.azurewebsites.net'
+    hostname = '52.160.84.53'
     username = 'admin'
     password = 'admin'
   }
