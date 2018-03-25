@@ -12,12 +12,15 @@ dependencies {
 
 
 task compileCobol {
-    description = 'Uses ecobol to comile cobol'
+    description = 'Uses ecobol to compile cobol'
 
     def sourceDir = '../tpcc/cobol_source'
     def targetDir = '../tpcc/intermediate_java_code'
     def ecobolExe = OperatingSystem.current().isMacOsX() ? './ecobolbin/bin/macosx/x86_64/ecobol' : './ecobolbin/bin/linux/x86_64/ecobol';
-
+    doFirst {
+                def proc  = "rm -rf build/tmp/sources".execute();
+                proc.waitFor();
+    }
     doLast {
 
         file(sourceDir).eachFile { aFile ->
@@ -102,4 +105,14 @@ clean.doLast {
 //compileCobol.dependsOn ecobolbin
 compileJava.dependsOn compileCobol
 
+compileJava.doLast {
+                def proc  = "mkdir build/tmp/sources".execute();
+                proc.waitFor();
+            copy {
+                from '../tpcc/intermediate_java_code'
+                into 'sources'
+                include '*.java'
+            }
+
+}
 
