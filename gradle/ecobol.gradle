@@ -99,7 +99,7 @@ clean.doLast {
     file ('../tpcc/intermediate_java_code').deleteDir()
 }
 
-compileCobol.dependsOn ecobolbin
+//compileCobol.dependsOn ecobolbin
 compileJava.dependsOn compileCobol
 
 
