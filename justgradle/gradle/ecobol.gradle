@@ -1,0 +1,105 @@
+import org.gradle.internal.os.OperatingSystem;
+
+
+
+
+dependencies {
+    compile files('./ecobolbin/libs/ecobol.jar')
+    compile files('./ecobolbin/libs/etrans.jar')
+    providedCompile gradleApi()
+    providedCompile(group: 'cc.heirloom', name: 'ecobol', version: '1.1', ext: 'zip')
+}
+
+
+task compileCobol {
+    description = 'Uses ecobol to comile cobol'
+
+    def sourceDir = '../tpcc/cobol_source'
+    def targetDir = '../tpcc/intermediate_java_code'
+    def ecobolExe = OperatingSystem.current().isMacOsX() ? './ecobolbin/bin/macosx/x86_64/ecobol' : './ecobolbin/bin/linux/x86_64/ecobol';
+
+    doLast {
+
+        file(sourceDir).eachFile { aFile ->
+            if (aFile.name.endsWith("cbl")) {
+                def proc  = "chmod 755 $ecobolExe".execute();
+                proc.waitFor();
+                proc  = "$ecobolExe -v  -out:smapcol -sql:mode MSSQL -cc $sourceDir/$aFile.name -out:dir $targetDir".execute();
+                println "stdout: ${proc.in.text}"
+                proc.waitFor();
+                if (proc.exitValue() != 0) {
+                    println "stderr: ${proc.err.text}"
+                    println "stdout: ${proc.in.text}"
+                }
+            }
+        }
+    }
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['../tpcc/intermediate_java_code','../tpcc/java_source']
+        }
+    }
+}
+
+buildscript {
+    repositories {
+        // Use 'jcenter' for resolving your dependencies.
+        // You can declare any Maven/Ivy/file repository here.
+        jcenter()
+        maven {
+            url 'https://maven.heirloomcomputing.com:443/artifactory/plugins-release'
+            credentials {
+                username = "${artifactory_user}"
+                password = "${artifactory_password}"
+            }
+        }
+        dependencies {
+            classpath 'org.akhikhl.gretty:gretty:+'
+        }
+    }
+}
+
+
+
+artifactory {
+    contextUrl = "${artifactory_contextUrl}"   //The base Artifactory URL if not overridden by the publisher/resolver
+    resolve {
+        repository {
+            repoKey = 'libs-release-local'
+            username = "${artifactory_user}"
+            password = "${artifactory_password}"
+            maven = true
+
+        }
+    }
+}
+
+configurations {
+    ecobolbin
+}
+dependencies {
+    ecobolbin(group: 'cc.heirloom', name: 'ecobol', version: '1.1', ext: 'zip')
+}
+task ecobolbin(type: Copy) {
+    from {
+        configurations.ecobolbin.collect {zipTree(it)}
+    }
+    into "ecobolbin"
+}
+
+ecobolbin.doLast {
+
+}
+
+clean.doLast {
+    file('ecobolbin').deleteDir()
+    file ('../tpcc/intermediate_java_code').deleteDir()
+}
+
+compileCobol.dependsOn ecobolbin
+compileJava.dependsOn compileCobol
+
+
