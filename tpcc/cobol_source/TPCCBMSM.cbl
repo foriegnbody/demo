@@ -353,11 +353,10 @@ LJ         SYSERR IS OUTERR. | DISPLAY goes to SYSERR
       *     call 'CBL_DEBUGBREAK'
       
            EXEC JAVA
-                 int target = -5;
-        int num = 3;
-
-        target =- num;  // Noncompliant; target = -3. Is that really what's meant?
-        target =+ num; // Noncompliant; target = 3
+         Optional<String> optional = getOptional();
+  if (optional != null) {  // Noncompliant
+    // do something with optional...
+  }
            END-EXEC
            if eibcalen = length of ws-commarea
                move dfhcommarea to ws-commarea
