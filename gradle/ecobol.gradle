@@ -113,6 +113,11 @@ compileJava.doLast {
                 into 'sources'
                 include '*.java'
             }
+            copy {
+                from '../tpcc/java_source'
+                into 'sources'
+                include '*.java'
+            }
 
 }
 
