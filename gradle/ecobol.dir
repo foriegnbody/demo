@@ -1,5 +1,4 @@
 $set directive "-out:transaction"
 $set directive "-source:copylib ../tpcc/copylib"
 $set directive "-sql:mode MSSQL"
-$set directive "-out:package TPCC"
 
