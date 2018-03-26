@@ -353,8 +353,7 @@ LJ         SYSERR IS OUTERR. | DISPLAY goes to SYSERR
       *     call 'CBL_DEBUGBREAK'
       
            EXEC JAVA
-                Boolean result=False;
-                assertThat(result);
+                int enum = 42;            // Noncompliant
            END-EXEC
            if eibcalen = length of ws-commarea
                move dfhcommarea to ws-commarea
