@@ -499,7 +499,7 @@ gg-01 *            END-EXEC
 
            EXEC CICS SYNCPOINT END-EXEC
 
-           move "Delivery processing compete" to msg
+           move "Delivery processing complete" to msg
 
            exec cics return end-exec.
 
