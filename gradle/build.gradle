@@ -15,7 +15,7 @@ plugins {
 }
 
 group 'cc.heirloom.demo'
-version '1.0-SNAPSHOT'
+version '1.0-DEMO'
 
 
 apply plugin: 'java'
@@ -39,7 +39,7 @@ cargo {
 
     // http://localhost:8080/onld/onld should bring up the screen..
     deployable {
-        file = file("$buildDir/libs/webtest-1.0-SNAPSHOT.war")
+        file = file("$buildDir/libs/TPCC-1.0-DEMO.war")
         context = 'tpcc'
     }
     local {
