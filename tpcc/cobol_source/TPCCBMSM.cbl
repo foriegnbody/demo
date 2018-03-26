@@ -353,7 +353,16 @@ LJ         SYSERR IS OUTERR. | DISPLAY goes to SYSERR
       *     call 'CBL_DEBUGBREAK'
       
            EXEC JAVA
-                int enum = 42;            // Noncompliant
+                switch (myVariable) {
+                 case 1:
+                         System.out.println("case 1");
+                 break;
+                case 2:  
+                        System.out.println("case 2");
+                default:
+                        System.out.println("default case");
+                break;
+                }
            END-EXEC
            if eibcalen = length of ws-commarea
                move dfhcommarea to ws-commarea
