@@ -353,10 +353,8 @@ LJ         SYSERR IS OUTERR. | DISPLAY goes to SYSERR
       *     call 'CBL_DEBUGBREAK'
       
            EXEC JAVA
-         Optional<String> optional = getOptional();
-  if (optional != null) {  // Noncompliant
-    // do something with optional...
-  }
+                 int i = 42;
+                double d = Double.longBitsToDouble(i);  // Noncompliant
            END-EXEC
            if eibcalen = length of ws-commarea
                move dfhcommarea to ws-commarea
