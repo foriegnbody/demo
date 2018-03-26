@@ -351,6 +351,11 @@ LJ         SYSERR IS OUTERR. | DISPLAY goes to SYSERR
        tpcc-mainline section.
        tpcc-mainline-para.
       *     call 'CBL_DEBUGBREAK'
+      
+           EXEC JAVA
+                Boolean result=False;
+                assertThat(result);
+           END-EXEC
            if eibcalen = length of ws-commarea
                move dfhcommarea to ws-commarea
                perform sql-trace-settings
