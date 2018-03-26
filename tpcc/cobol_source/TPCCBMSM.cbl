@@ -353,17 +353,11 @@ LJ         SYSERR IS OUTERR. | DISPLAY goes to SYSERR
       *     call 'CBL_DEBUGBREAK'
       
            EXEC JAVA
-                int myVariable = 2;
-                switch (myVariable) {
-                 case 1:
-                         System.out.println("case 1");
-                 break;
-                case 2:  
-                        System.out.println("case 2");
-                default:
-                        System.out.println("default case");
-                break;
-                }
+                 int target = -5;
+        int num = 3;
+
+        target =- num;  // Noncompliant; target = -3. Is that really what's meant?
+        target =+ num; // Noncompliant; target = 3
            END-EXEC
            if eibcalen = length of ws-commarea
                move dfhcommarea to ws-commarea
