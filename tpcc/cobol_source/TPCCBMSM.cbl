@@ -353,6 +353,7 @@ LJ         SYSERR IS OUTERR. | DISPLAY goes to SYSERR
       *     call 'CBL_DEBUGBREAK'
       
            EXEC JAVA
+                int myVariable = 2;
                 switch (myVariable) {
                  case 1:
                          System.out.println("case 1");
