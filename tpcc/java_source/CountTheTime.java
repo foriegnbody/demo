@@ -11,7 +11,7 @@ public class CountTheTime implements AutoCloseable {
 	
 	public void close() {
 		 _end = System.currentTimeMillis();
-		System.out.println(_method + ":" + (_end-_start));
+		//System.out.println(_method + ":" + (_end-_start));
 	}
 	
 }
