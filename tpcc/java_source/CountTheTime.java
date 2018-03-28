@@ -15,6 +15,7 @@ public class CountTheTime implements AutoCloseable {
 		_end = System.currentTimeMillis();
 		System.out.println(_method + ":" + (_end-_start));
 		Set<URL> sites = new HashSet<URL>();  // Noncompliant
+		System.out.print(sites.toString());
 	}
 	
 }
