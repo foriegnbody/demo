@@ -15,7 +15,7 @@ plugins {
 }
 
 group 'cc.heirloom.demo'
-version '1.0-DEMO'
+version 'gradle##' + passedVersion
 
 
 apply plugin: 'java'
@@ -32,14 +32,13 @@ apply plugin: 'com.bmuschko.cargo'
 
 cargoRunLocal.dependsOn assemble  //this will assemble the war every time we do the local deploy
 
-//cargo config, download a local copy of tomcat
+//cargo config
 cargo {
     containerId = 'tomcat8x'
     port = 80 
 
-    // http://localhost:8080/onld/onld should bring up the screen..
     deployable {
-        file = file("$buildDir/libs/TPCC-1.0-DEMO.war")
+        file = file("$buildDir/libs/TPCC-" + project.version + ".war")
         context = 'tpcc'
     }
     local {
