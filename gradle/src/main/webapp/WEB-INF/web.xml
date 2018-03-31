@@ -109,11 +109,11 @@
       </init-param>
       <init-param>
          <param-name>sql.default.url</param-name>
-         <param-value>jdbc:sqlserver://heirloomtpcc.database.windows.net:1433;database=TPCCDatabase;user=heirloom@heirloomtpcc;password=TPCCpassword1;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;</param-value>
+         <param-value>jdbc:sqlserver://heirloomtpccwest.database.windows.net:1433;database=TPCCDatabase;user=heirloomtpcc@heirloomtpccwest;password=TPCCpassword1;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;</param-value>
       </init-param>
       <init-param>
          <param-name>sql.default.user</param-name>
-         <param-value>heirloom@heirloomtpcc</param-value>
+         <param-value>heirloom@heirloomtpccwest</param-value>
       </init-param>
       <init-param>
          <param-name>sysid</param-name>
